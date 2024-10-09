@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
 import { RouterOutlet } from '@angular/router';
-import { NavbarComponent } from "../components/navbar/navbar.component";
-import { MenubarModule } from 'primeng/menubar';
+
+
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, MenubarModule],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  imports: [RouterOutlet, ToastModule],
+  template: `<p-toast /> <router-outlet />`,
+  providers: [MessageService],
 })
 export class AppComponent {
   title = 'website';

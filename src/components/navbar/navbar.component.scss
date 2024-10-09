@@ -1,0 +1,12 @@
+.bg-blue {
+    background-color: aqua;
+    height: 1.5rem;
+    width: 100%
+}
+
+:host ::ng-deep {
+    .p-menubar {
+        background-color: rgb(226 232 240);
+        padding: 0.2rem;
+    }
+}

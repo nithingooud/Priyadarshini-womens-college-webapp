@@ -16,47 +16,98 @@ export class NavbarComponent {
     this.items = [
       {
         label: 'Home',
+        route: '',
         icon: 'pi pi-home'
       },
       {
-        label: 'Features',
-        icon: 'pi pi-star'
-      },
-      {
-        label: 'Projects',
+        label: 'About Us',
         icon: 'pi pi-search',
         items: [
           {
-            label: 'Components',
-            icon: 'pi pi-bolt'
+            label: 'About Priyadarshini',
+            route: '/about',
           },
           {
-            label: 'Blocks',
-            icon: 'pi pi-server'
-          },
-          {
-            label: 'UI Kit',
-            icon: 'pi pi-pencil'
-          },
-          {
-            label: 'Templates',
-            icon: 'pi pi-palette',
+            label: 'Core Executive Body',
             items: [
               {
-                label: 'Apollo',
-                icon: 'pi pi-palette'
+                label: 'Chairman',
               },
               {
-                label: 'Ultima',
-                icon: 'pi pi-palette'
+                label: 'Director',
+              },
+              {
+                label: 'Principal',
               }
             ]
-          }
+          },
+          {
+            label: 'Deans',
+            items: [
+              {
+                label: 'Dean R&D',
+              },
+              {
+                label: 'Dean Quality Management System',
+              },
+              {
+                label: 'Dean Training & Placement',
+              },
+              {
+                label: 'Dean Academics',
+              },
+              {
+                label: 'Dean Student Affairs',
+              }
+            ]
+          },
+          {
+            label: 'Service Rules'
+          },
+          {
+            label: 'Governance',
+            items: [
+              {
+                label: 'Governing Body',
+              },
+              {
+                label: 'Academic Advisory Committee',
+              },
+            ]
+          },
+          {
+            label: 'Code of Conduct',
+            items: [
+              {
+                label: 'Teachers',
+              },
+              {
+                label: 'Students',
+              },
+            ]
+          },
         ]
       },
       {
-        label: 'Contact',
-        icon: 'pi pi-envelope'
+        label: 'Academics',
+        icon: 'pi pi-envelope',
+        items: [
+          {
+            label: 'Courses Offered'
+          },
+          {
+            label: 'Academic Committee'
+          },
+          {
+            label: 'Academic Calendar '
+          },
+          {
+            label: 'Committees'
+          },
+          {
+            label: 'SC/ST welfare Committee'
+          },
+        ]
       }
     ]
   }
