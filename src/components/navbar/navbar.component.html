@@ -1,18 +1,22 @@
 <div>
     <div class="bg-slate-300 h-4">
-
     </div>
-    <div>
-        <img src="https://res.cloudinary.com/nithinmanda/image/upload/v1728291491/Screenshot_2024-10-07_at_2.27.23_PM_deq6f9.png"
-            width="400px" height="200px" />
+    <div class="flex flex-row items-center justify-between">
+        <div>
+            <img src="https://res.cloudinary.com/nithinmanda/image/upload/v1728291491/Screenshot_2024-10-07_at_2.27.23_PM_deq6f9.png"
+                width="400px" height="200px" />
+        </div>
+        <div class="mr-4">
+            <img src="https://res.cloudinary.com/nithinmanda/image/upload/v1728452883/ISO-9001-2015-Logo-Evans_mdbhaq.png"
+                width="100px" height="100px" />
+        </div>
     </div>
     <div class="card mx-4">
         <p-menubar [model]="items">
             <ng-template pTemplate="item" let-item>
-                <ng-container>
-                    <a [routerLink]="item.route">
-                        <span class="item.icon">
-                        </span>
+                <ng-container @if{item.route; else urlRef}>
+                    <a [routerLink]="item.route" class="p-menuitem-link">
+                        <span [class]="item.icon"></span>
                         <span class="ml-2">{{item.label}}</span>
                     </a>
                 </ng-container>

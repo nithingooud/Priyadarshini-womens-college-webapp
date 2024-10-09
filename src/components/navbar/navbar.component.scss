@@ -7,6 +7,14 @@
 :host ::ng-deep {
     .p-menubar {
         background-color: rgb(226 232 240);
-        padding: 0.2rem;
+        padding: 0.3rem;
+    }
+
+    .p-menubar .p-menuitem>.p-menuitem-content .p-menuitem-link {
+        padding: 0.40rem 0.75rem;
+    }
+
+    .p-menubar .p-submenu-list {
+        margin-top: 0.3rem
     }
 }
