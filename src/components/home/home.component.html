@@ -1,1 +1,25 @@
-<p>home works!</p>
+<div class="grid grid-cols-3 gap-4">
+    <div class="col-span-1">
+        <p-card header="Thought for the day">
+            <p class="m-0">
+                When you give joy to other people, you get more joy in return. You should give a good thought to the
+                happiness that you can give out.
+            </p>
+        </p-card>
+    </div>
+
+    <div class="col-span-2">
+        <p-galleria [value]="images" [autoPlay]="true" [transitionInterval]="1500"
+            [responsiveOptions]="responsiveOptions" [showIndicators]="true" [showThumbnails]="false"
+            [changeItemOnIndicatorHover]="true" [containerStyle]="{ 'max-width': '640px' }" [circular]="true"
+            [showIndicatorsOnItem]="true">
+            <ng-template pTemplate="item" let-item>
+                <img [src]="item" style="width: 100%;" />
+            </ng-template>
+        </p-galleria>
+    </div>
+    <div class="col-span-1">
+        <p>announcements</p>
+    </div>
+
+</div>
