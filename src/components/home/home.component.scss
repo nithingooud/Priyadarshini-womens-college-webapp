@@ -3,3 +3,66 @@ img {
     height: 31.25rem;
     object-fit: cover;
 }
+
+.wrapper {
+    max-width: 98%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+}
+
+.one {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.two {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.three {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.four {
+    grid-column: 2;
+    grid-row: 1/4;
+}
+
+.six {
+    grid-column: 3;
+    grid-row: 1/ 4;
+}
+
+.announcements {
+    min-height: 500px;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+
+
+    .one,
+    .two,
+    .three,
+    .four,
+    .six {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+
+
+    .four,
+    .six {
+        width: 100%;
+    }
+}

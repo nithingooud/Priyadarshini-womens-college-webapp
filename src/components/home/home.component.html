@@ -1,25 +1,41 @@
-<div class="grid grid-cols-3 gap-4">
-    <div class="col-span-1">
-        <p-card header="Thought for the day">
-            <p class="m-0">
-                When you give joy to other people, you get more joy in return. You should give a good thought to the
-                happiness that you can give out.
-            </p>
-        </p-card>
+<div class="wrapper">
+    <div class="one">
+        <p
+            class="text-lg font-semibold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent break-words">
+            Thought for the day
+        </p>
+        <p class="m-0">
+            When you give joy to other people, you get more joy in return. You should give a good thought to the
+            happiness
+            that you can give out.
+        </p>
+    </div>
+    <div class="two">
+        <p
+            class="text-lg font-semibold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent break-words">
+            Thought for the day
+        </p>
+        <p class="m-0">
+            When you give joy to other people, you get more joy in return. You should give a good thought to the
+            happiness
+            that you can give out.
+        </p>
     </div>
 
-    <div class="col-span-2">
+
+    <div class="four lg:ml-4">
         <p-galleria [value]="images" [autoPlay]="true" [transitionInterval]="1500"
             [responsiveOptions]="responsiveOptions" [showIndicators]="true" [showThumbnails]="false"
             [changeItemOnIndicatorHover]="true" [containerStyle]="{ 'max-width': '640px' }" [circular]="true"
             [showIndicatorsOnItem]="true">
             <ng-template pTemplate="item" let-item>
-                <img [src]="item" style="width: 100%;" />
+                <img [src]="item" class="w-full " />
             </ng-template>
         </p-galleria>
     </div>
-    <div class="col-span-1">
-        <p>announcements</p>
-    </div>
+    <div class="six">
+        <div class="announcements bg-slate-300">
 
+        </div>
+    </div>
 </div>

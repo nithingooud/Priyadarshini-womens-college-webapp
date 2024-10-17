@@ -1,12 +1,13 @@
 
 import { Component, OnInit } from '@angular/core';
 import { GalleriaModule } from 'primeng/galleria';
-import { CardModule } from 'primeng/card';
+import { FieldsetModule } from 'primeng/fieldset';
+
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [GalleriaModule, CardModule],
+  imports: [GalleriaModule, FieldsetModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
