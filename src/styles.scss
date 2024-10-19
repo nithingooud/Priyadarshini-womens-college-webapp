@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
-
+@import "primeicons/primeicons.css";
 
 
 @layer tailwind-base,
@@ -15,4 +16,14 @@ tailwind-utilities;
 @layer tailwind-utilities {
     @tailwind components;
     @tailwind utilities;
+}
+
+@layer base {
+    @font-face {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url('/fonts/Gilroy-Light.otf') format('otf');
+    }
 }

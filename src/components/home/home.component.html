@@ -1,41 +1,289 @@
-<div class="wrapper">
-    <div class="one">
-        <p
-            class="text-lg font-semibold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent break-words">
+<div class="wrapper lg:mx-4 sm:mx-2" style="margin-left: 0.5rem;
+margin-right: 0.5rem;">
+    <div class="one border p-3 mt-3 sm:ml-2 rounded-lg shadow-md">
+        <p class="text-md italic mb-2 font-semibold">
             Thought for the day
         </p>
-        <p class="m-0">
-            When you give joy to other people, you get more joy in return. You should give a good thought to the
+        <p class="m-0 text-red-500">
+            "When you give joy to other people, you get more joy in return. You should give a good thought to the
             happiness
-            that you can give out.
+            that you can give out."
         </p>
     </div>
-    <div class="two">
-        <p
-            class="text-lg font-semibold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent break-words">
-            Thought for the day
+    <div class="two border p-3 mt-3 sm:ml-2 rounded-lg shadow-md">
+        <p class="text-md mb-2 font-semibold">
+            Eamcet Code: <span class=" text-xl text-gray-500" style="font-family: serif;">PRIW</span>
         </p>
-        <p class="m-0">
-            When you give joy to other people, you get more joy in return. You should give a good thought to the
-            happiness
-            that you can give out.
-        </p>
+        <img src="https://res.cloudinary.com/nithinmanda/image/upload/v1729173254/nptel_cty2z3.png">
+        <a href="https://priw.ac.in/admin/pdf/Priyadarshi%20Final(1).pdf" target="new">
+            <div
+                class="flex flex-row items-center p-2 justify-center text-md  mt-4 font-semibold border rounded-full bg-blue-400 cursor-pointer">
+                <i class="pi pi-angle-double-right cursor-pointer mr-2" style="font-size: 1.5rem"></i>
+                <h1>College Brochure</h1>
+                <i class="pi pi-angle-double-left cursor-pointer ml-2" style="font-size: 1.5rem"></i>
+            </div>
+        </a>
     </div>
 
-
-    <div class="four lg:ml-4">
-        <p-galleria [value]="images" [autoPlay]="true" [transitionInterval]="1500"
-            [responsiveOptions]="responsiveOptions" [showIndicators]="true" [showThumbnails]="false"
-            [changeItemOnIndicatorHover]="true" [containerStyle]="{ 'max-width': '640px' }" [circular]="true"
-            [showIndicatorsOnItem]="true">
+    <div class="four p-3">
+        <p-galleria [value]="images" [autoPlay]="true" [shouldStopAutoplayByClick]="false" [transitionInterval]="3000"
+            [responsiveOptions]="responsiveOptions" [showThumbnails]="false" [containerStyle]="{ 'max-width': '640px' }"
+            [circular]="true" [showItemNavigators]="true">
             <ng-template pTemplate="item" let-item>
                 <img [src]="item" class="w-full " />
             </ng-template>
         </p-galleria>
     </div>
-    <div class="six">
-        <div class="announcements bg-slate-300">
-
+    <div class="six p-1 pt-0">
+        <h2
+            class="text-center text-2xl mb-2 mt-2 bg-slate-600 font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+            Announcements</h2>
+        <div class="announcements bg-slate-600 p-4 shadow-md rounded-md overflow-hidden relative">
+            <ul class="announcement-list space-y-4 absolute inset-0 animate-scroll">
+                <li class="flex items-center text-center text-md text-white ml-3 gap-2">
+                    <span class="bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">New</span>
+                    <p class="text-sm text-center">Semester break starts on October 20th.</p>
+                </li>
+                <li class="flex items-center text-center text-md text-white ml-3 gap-2">
+                    <span class="bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">New</span>
+                    <p class="text-sm text-center">Semester break starts on October 20th.</p>
+                </li>
+                <li class="flex items-center text-center text-md text-white ml-3 gap-2">
+                    <span class="bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">New</span>
+                    <p class="text-sm text-center">Semester break starts on October 20th.</p>
+                </li>
+                <li class="flex items-center text-center text-md text-white ml-3 gap-2">
+                    <span class="bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">New</span>
+                    <p class="text-sm text-center">Semester break starts on October 20th.</p>
+                </li>
+                <li class="flex items-center text-start text-md text-white ml-3 gap-2">
+                    <span class="bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">New</span>
+                    <p class="text-sm ">Semester break starts on October 20th.Semester break starts on
+                        October 20th.</p>
+                </li>
+                <li class="flex items-center text-center text-md text-white ml-3 gap-2">
+                    <span class="bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">New</span>
+                    <p class="text-sm text-center">Semester break starts on October 20th.</p>
+                </li>
+                <li class="flex items-start text-center text-md text-white ml-3 gap-2">
+                    <span class="bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">New</span>
+                    <p class="text-sm text-center">Project submissions due by November 5th.Project submissions due
+                        by
+                        November 5th.Project submissions due by November 5th.Project submissions due by November
+                        5th.Project submissions due by November 5th.Project submissions due by November 5th.Project
+                        submissions due by November 5th.Project submissions due by November 5th.Project submissions
+                        due
+                        by November 5th.Project submissions due by November 5th.Project submissions due by November
+                        5th.P due by November 5th.Project submissions due by November 5th.</p>
+                </li>
+                <li class="flex items-center text-center text-md text-white ml-3 gap-2">
+                    <span class="bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">New</span>
+                    <p class="text-sm text-center">College fest is on December 10th.</p>
+                </li>
+            </ul>
         </div>
     </div>
+
+
+</div>
+<div>
+    <h1
+        class="about-priya-header bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+        About Priyadarshini College
+    </h1>
+    <p class="about-priya-text lg:mx-8">
+        Priyadarshini Institute of Science and Technology for Women, one more feather in the crown of the
+        Priyadarshini
+        Educational Group, Sponsored By J.K. Education Society, has commenced its maiden voyage from the year
+        2009-2010
+        with a crew to work for the upliftment of women in the world arena. tsnpds
+    </p>
+</div>
+<div>
+    <h1
+        class="about-priya-header bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+        Our Facilities
+    </h1>
+    <div class="flex flex-col lg:flex-row items-center justify-between lg:mx-8 gap-2">
+        <div class="transition duration-300 hover:scale-105">
+            <p-card header="Hostel Life" [style]="{ width: '25rem' }">
+                <ng-template pTemplate="header">
+                    <div class="card-images">
+                        <img alt="Card"
+                            src="https://res.cloudinary.com/nithinmanda/image/upload/v1729219464/hostel-life_xevwlh.jpg" />
+                    </div>
+                </ng-template>
+                <p>
+                    A comfortable and straightforward accommodation offering both A/C and non-A/C rooms.
+                </p>
+            </p-card>
+        </div>
+        <div class="transition duration-300 hover:scale-105">
+            <p-card header="Knowledge Life" [style]="{ width: '400px' }">
+                <ng-template pTemplate="header">
+                    <div class="card-images">
+                        <img alt="Card"
+                            src="https://res.cloudinary.com/nithinmanda/image/upload/v1729219464/knowledge-life_a2qsmg.jpg" />
+                    </div>
+                </ng-template>
+                <p>
+                    A strong focus on enhancing employment opportunities and promoting research activities.
+                </p>
+            </p-card>
+        </div>
+        <div class="transition duration-300 hover:scale-105">
+            <p-card header="Curriculum & Beyond" [style]="{ width: '400px' }">
+                <ng-template pTemplate="header">
+                    <div class="card-images">
+                        <img alt="Card"
+                            src="https://res.cloudinary.com/nithinmanda/image/upload/v1729219464/curriculam_and_beyond_tuuiju.webp" />
+                    </div>
+                </ng-template>
+                <p>
+                    Students at PRIW enjoy a vibrant social life, filled with cultural, sports, and socially driven
+                    events.
+                </p>
+            </p-card>
+        </div>
+    </div>
+    <div class="flex flex-col lg:flex-row items-center justify-between lg:mx-8 gap-2 mt-4">
+        <div class="transition duration-300 hover:scale-105">
+            <p-card header="Our Green Campus
+            " [style]="{ width: '400px' }">
+                <ng-template pTemplate="header">
+                    <div class="card-images">
+                        <img alt="Card"
+                            src="https://res.cloudinary.com/nithinmanda/image/upload/v1729219464/green-campus_qz2fmq.avif" />
+                    </div>
+                </ng-template>
+                <p>
+                    Surrounded by lush greenery, students breathe fresh air that calms the mind and inspires fresh
+                    ideas.
+                </p>
+            </p-card>
+        </div>
+        <div class="transition duration-300 hover:scale-105">
+            <p-card header="Campus Life" [style]="{ width: '400px' }">
+                <ng-template pTemplate="header">
+                    <div class="card-images">
+                        <img alt="Card"
+                            src="https://res.cloudinary.com/nithinmanda/image/upload/v1729219464/colllege-life_vtc4uh.jpg" />
+                    </div>
+                </ng-template>
+                <p>
+                    Pristine, eco-friendly, and vibrant, the campus offers an ideal environment for learning.
+                </p>
+            </p-card>
+        </div>
+        <div class="transition duration-300 hover:scale-105">
+            <p-card header="Stellar Faculty" [style]="{ width: '400px' }">
+                <ng-template pTemplate="header">
+                    <div class="card-images">
+                        <img alt="Card"
+                            src="https://res.cloudinary.com/nithinmanda/image/upload/v1729219463/faculty_jmdyl4.jpg" />
+                    </div>
+                </ng-template>
+                <p>
+                    Our faculty are not only experts in their fields but also supportive, engaging, enthusiastic,
+                    and
+                    caring.
+                </p>
+            </p-card>
+        </div>
+    </div>
+</div>
+<div>
+    <h1
+        class="about-priya-header  bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+        Core Executive Body
+    </h1>
+    <div class="card lg:mx-8">
+        <p-dataView #dv [value]="products">
+            <ng-template pTemplate="list" let-products>
+                <div class="grid grid-nogutter">
+                    <div class="col-12" *ngFor="let item of products; let first = first" class="col-12">
+                        <div class="flex flex-column sm:flex-row sm:align-items-center p-4 gap-3 transition duration-300 hover:scale-105 rounded-lg"
+                            [ngClass]="{ 'border-top-1 surface-border': !first }">
+                            <div class="md:w-10rem relative">
+                                <img class="block xl:block mx-auto border-round w-full" [src]="item.image"
+                                    style="max-height: 16rem;" [alt]="item.name" />
+                            </div>
+                            <div
+                                class="flex flex-column md:flex-row justify-content-between md:align-items-center flex-1 gap-4">
+                                <div
+                                    class="flex flex-row md:flex-column justify-content-between align-items-start gap-2">
+                                    <div>
+                                        <div class="text-lg font-medium text-900 mt-2">{{ item.name }}</div>
+                                        <span class="font-medium text-secondary text-sm">{{ item.designation }}</span>
+                                    </div>
+                                    <div class="surface-100 p-1" style="border-radius: 30px">
+                                        <div class="surface-0 flex align-items-center gap-2 justify-content-center py-1 px-2"
+                                            style="border-radius: 30px; box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.04), 0px 1px 2px 0px rgba(0, 0, 0, 0.06)">
+                                            <!-- <span class="text-900 font-medium text-sm">{{ item.rating }}</span> -->
+                                            <i class="pi pi-star-fill text-yellow-500"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row md:align-items-end gap-5">
+                                    <i class="pi pi-instagram cursor-pointer" style="font-size: 1.5rem"></i>
+                                    <i class="pi pi-twitter cursor-pointer" style="font-size: 1.5rem"></i>
+                                    <i class="pi pi-facebook cursor-pointer" style="font-size: 1.5rem"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </p-dataView>
+    </div>
+</div>
+<div>
+    <h1
+        class="about-priya-header   bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+        Image Gallery
+    </h1>
+    <div class="row">
+        <div class="column">
+            <img
+                src="https://res.cloudinary.com/nithinmanda/image/upload/v1729317573/priyadarshini/priya-15_nt9jlv.jpg">
+            <img
+                src="https://res.cloudinary.com/nithinmanda/image/upload/v1729317573/priyadarshini/priya-14_tkgf2e.jpg">
+            <img
+                src="https://res.cloudinary.com/nithinmanda/image/upload/v1729317571/priyadarshini/priya-12_vxqen3.jpg">
+        </div>
+        <div class="column">
+            <img
+                src="https://res.cloudinary.com/nithinmanda/image/upload/v1729317574/priyadarshini/priya-17_dtxxnn.jpg">
+            <img
+                src="https://res.cloudinary.com/nithinmanda/image/upload/v1729317391/priyadarshini/priya-11_ublh04.jpg">
+        </div>
+        <div class="column">
+            <img src="https://res.cloudinary.com/nithinmanda/image/upload/v1729005313/priya-4_nggmgt.jpg">
+            <img
+                src="https://res.cloudinary.com/nithinmanda/image/upload/v1729317572/priyadarshini/priya-13_snpeyl.jpg">
+            <img
+                src="https://res.cloudinary.com/nithinmanda/image/upload/v1729317573/priyadarshini/priya-16_lts2oc.jpg">
+        </div>
+    </div>
+</div>
+<div>
+    <h1
+        class="about-priya-header mb-4  bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+        Our Recruiters
+    </h1>
+    <div class="marquee-container">
+        <div class="marquee-content" #marqueeContent>
+            <ng-container *ngFor="let image of marqueeImages">
+                <img [src]="image.src" [alt]="image.alt" width="180" height="100">
+            </ng-container>
+            <ng-container *ngFor="let image of marqueeImages">
+                <img [src]="image.src" [alt]="image.alt" width="180" height="100">
+            </ng-container>
+        </div>
+    </div>
+
+</div>
+
+<div class="h-20">
+
 </div>

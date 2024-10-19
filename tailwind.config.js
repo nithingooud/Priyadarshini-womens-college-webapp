@@ -10,6 +10,9 @@ module.exports = {
           '0%': { opacity: 0 },
           '100%': { opacity: 1 },
         },
+        colors: {
+          'regal-blue': '#243c5a',
+        },
       },
       animation: {
         fadeIn: 'fadeIn 0.3s ease-in-out',
