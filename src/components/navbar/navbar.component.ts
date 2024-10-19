@@ -90,7 +90,7 @@ export class NavbarComponent {
       },
       {
         label: 'Academics',
-        icon: 'pi pi-envelope',
+        icon: 'pi pi-book',
         items: [
           {
             label: 'Courses Offered'
@@ -108,7 +108,118 @@ export class NavbarComponent {
             label: 'SC/ST welfare Committee'
           },
         ]
-      }
+      },
+      {
+        label: 'Departments',
+        icon: 'pi pi-building-columns',
+        items: [
+          {
+            label: 'CSE',
+            items: [
+              {
+                label: 'About CSE'
+              },
+              {
+                label: 'Vision & Mission'
+              },
+              {
+                label: 'Faculty'
+              },
+              {
+                label: 'Laboratory Details'
+              },
+              {
+                label: 'Department Activities'
+              },
+              {
+                label: 'Downloads'
+              },
+              {
+                label: 'Gallery'
+              }
+            ]
+          },
+          {
+            label: 'ECE',
+            items: [
+              {
+                label: 'About ECE'
+              },
+              {
+                label: 'Vision & Mission'
+              },
+              {
+                label: 'Faculty'
+              },
+              {
+                label: 'Laboratory Details'
+              },
+              {
+                label: 'Department Activities'
+              },
+              {
+                label: 'Downloads'
+              },
+              {
+                label: 'Gallery'
+              }
+            ]
+          },
+          {
+            label: 'EEE',
+            items: [
+              {
+                label: 'About EEE'
+              },
+              {
+                label: 'Vision & Mission'
+              },
+              {
+                label: 'Faculty'
+              },
+              {
+                label: 'Laboratory Details'
+              },
+              {
+                label: 'Department Activities'
+              },
+              {
+                label: 'Downloads'
+              },
+              {
+                label: 'Gallery'
+              }
+            ]
+          },
+          {
+            label: 'H&S',
+            items: [
+              {
+                label: 'About H&S'
+              },
+              {
+                label: 'Vision & Mission'
+              },
+              {
+                label: 'Faculty'
+              },
+              {
+                label: 'Laboratory Details'
+              },
+              {
+                label: 'Department Activities'
+              },
+              {
+                label: 'Downloads'
+              },
+              {
+                label: 'Gallery'
+              }
+            ]
+          },
+
+        ]
+      },
     ]
   }
 
